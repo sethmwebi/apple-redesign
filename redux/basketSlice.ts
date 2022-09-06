@@ -29,7 +29,7 @@ export const basketSlice = createSlice({
         newBasket.splice(index, 1);
       } else {
         console.log(
-          `Can't remove product (id: ${action.product.id}) as its not in basket!`
+          `Can't remove product (id: ${action.payload.id}) as its not in basket!`
         );
       }
 
